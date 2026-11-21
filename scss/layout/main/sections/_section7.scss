@@ -77,7 +77,7 @@
     color: $main_text_color_A;
   }
   .Community_Card_Sub{
-    @include Inter("Inter-thin", 16px);
+    @include Inter("Inter-regular", 16px);
     color: $team_secondary_color;
   }
 }

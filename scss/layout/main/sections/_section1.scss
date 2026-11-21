@@ -42,7 +42,7 @@
     }
   }
   .Block_Text{
-    @include Inter("Inter-thin", 18px);
+    @include Inter("Inter-regular", 18px);
     font-weight: 600;
     color: $main_text_color_A;
     line-height: 28px;

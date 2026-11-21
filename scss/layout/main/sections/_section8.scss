@@ -33,13 +33,13 @@
     }
   }
   .Reviews_Header_Sub{
-    @include Inter("Inter-thin", 18px);
+    @include Inter("Inter-regular", 18px);
     color: $main_text_color_A;
     @include phone__small_horizontal{
-      @include Inter("Inter-thin", 16px);
+      @include Inter("Inter-regular", 16px);
     }
     @include phone_vertical{
-      @include Inter("Inter-thin", 16px);
+      @include Inter("Inter-regular", 16px);
       text-align: center
     }
   }
@@ -68,7 +68,7 @@
         color: $main_text_color_A;
       }
       .Review_Text_Sub{
-        @include Inter("Inter-thin", 14px);
+        @include Inter("Inter-regular", 14px);
         color: $main_text_color_A;
         line-height: 20px;
       }
@@ -92,7 +92,7 @@
         color: $main_text_color_A;
       }
       .Review_Avatar_Status{
-        @include Inter("Inter-thin", 14px);
+        @include Inter("Inter-regular", 14px);
         color: $secondary_text_color;
       }
     }

@@ -51,7 +51,7 @@
     gap: 10px;
     .About_Text{
       color: $main_text_color_B;
-      @include Inter("Inter-regular", 16px);
+      @include Inter("Inter-medium", 16px);
     }
     @include tablet{
       gap: 12px;

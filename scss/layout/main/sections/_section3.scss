@@ -57,13 +57,13 @@
         }
       }
       .Card_Text{
-        @include Inter("Inter-thin", 16px);
+        @include Inter("Inter-regular", 16px);
         color: $secondary_text_color;
         line-height: 24px;
       }
     }
     .Explore{
-      @include Inter("Inter-medium", 14px);
+      @include Inter("Inter-semi-bold", 14px);
       @include flex(start, center, row);
       color: $section_bg_color_B;
       gap: 8px;
