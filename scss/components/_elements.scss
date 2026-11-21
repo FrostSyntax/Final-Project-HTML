@@ -1,0 +1,102 @@
+@use "../base/indexB" as *;
+@use "../animations/keyframes" as *;
+
+.Purple_Ball{
+  position: absolute;
+  top: -16%;
+  right: -10%;
+  border-radius: 50%;
+  width: 740px;
+  height: 740px;
+  background-color: $main_ball_color;
+  z-index: -1;
+  @include tablet{
+    width: 480px;
+    height: 480px;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include phone_horizontal{
+    width: 480px;
+    height: 480px;
+    top: 425px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include phone_vertical{
+    width: 234px;
+    height: 234px;
+    top: 650px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.Blue_Ball_1{
+  position: absolute;
+  top: 675px;
+  right: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 72px;
+  height: 72px;
+  background-color: $ball_color_B;
+  z-index: 1;
+  @include tablet{
+    top: 1000px;
+    right: 250px;
+    z-index: 1;
+  }
+  @include phone_horizontal{
+    top: 900px;
+    right: 250px;
+    z-index: 1;
+  }
+  @include phone__small_horizontal{
+    display: none;
+  }
+  @include phone_vertical{
+    top: 900px;
+    right: 40%;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.Blue_Ball_2{
+  position: absolute;
+  top: 400px;
+  right: 625px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 72px;
+  height: 72px;
+  background-color: $ball_color_A;
+  z-index: -1;
+  @include tablet{
+    top: 740px;
+    right: 72%;
+  }
+  @include phone_horizontal{
+    top: 740px;
+    right: 80%;
+  }
+  @include phone_vertical{
+    top: 775px;
+    right: 80%;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.Go_Upwards{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 100000;
+  @include phone_horizontal{
+    display: none;
+  }
+}
+

@@ -1,0 +1,66 @@
+@use "../base/indexB" as *;
+
+.Header{
+  max-width: 1920px;
+  width: 100%;
+  margin-top: 24px;
+  @include flex;
+  .Header_Content{
+    width: 85%;
+    @include flex(space-between);
+    .Nav_Bar{
+      gap: 32px;
+      @include flex(space-between);
+      .Nav_Logo{
+        .Open_Maps{
+          img{
+            &:hover{
+            scale: 1.05;
+            cursor: pointer;
+            }
+          }
+        }
+      }
+      .Nav_List{
+        gap: 24px;
+        @include flex;
+        .Nav_Item{
+          @include Inter("Inter-medium", 14px);
+          color: $main_text_color_A;
+          &:hover{
+            color: $section_bg_color_B;
+            cursor: pointer;
+          }
+        }
+        @include phone_horizontal{
+          display: none;
+        }
+        @include phone_vertical{
+          display: none;
+        }
+        @include small_tablet{
+          display: none
+        }
+      }
+    }
+    .Social_List{
+      @include flex;
+      gap: 16px;
+      .Social_Media{
+        @include phone_vertical{
+        display: none;
+        }
+        transition: all;
+        &:hover{
+          scale: 1.05;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+

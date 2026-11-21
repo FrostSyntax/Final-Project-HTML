@@ -1,0 +1,83 @@
+@use "../../../base/indexB" as *;
+
+
+.Section7{
+  max-width: 1920px;
+  width: 100%;
+  min-height: 742px;
+  @include flex($direction: column);
+  background-color: $main_text_color_B;
+  gap: 64px;
+  padding: 80px 0;
+  @include tablet{
+    min-height: 1000px;
+  }
+  @include phone_horizontal{
+    min-height: 1000px;
+  }
+  @include phone_vertical{
+    padding: 48px 20px;
+  }
+}
+
+.Community_Header{
+  @include Inter("Inter-bold", 48px);
+  color: $main_text_color_A;
+  @include small_tablet{
+    @include Inter("Inter-bold", 36px);
+  }
+  @include phone_horizontal{
+    @include Inter("Inter-bold", 36px);
+  }
+  @include phone__small_horizontal{
+    @include Inter("Inter-bold", 24px);
+  }
+  @include phone_vertical{
+    @include Inter("Inter-bold", 30px);
+    text-align: center;
+  }
+}
+
+.Community_Block{
+  max-width: 1250px;
+  @include flex;
+  flex-wrap: wrap;
+  gap: 64px 32px;
+  .Community_Card{
+    min-width: 280px;
+    @include flex($direction: column);
+    gap: 16px;
+    .Community_Avatar{
+      position: relative;
+      .Twitter_Absolute{
+        position: absolute;
+        left: 40px;
+        top: 100px;
+        cursor: pointer;
+        &:hover{
+          scale: 1.05;
+        }
+      }
+    }
+  }
+  @include small_tablet{
+    gap: 40px 32px;
+  }
+  @include phone_horizontal{
+    gap: 40px 32px;
+  }
+}
+
+.Community_Text{
+  text-align: center;
+  @include flex($direction: column);
+  gap: 4px;
+  .Community_Card_Main{
+    @include Inter("Inter-semi-bold", 20px);
+    color: $main_text_color_A;
+  }
+  .Community_Card_Sub{
+    @include Inter("Inter-thin", 16px);
+    color: $team_secondary_color;
+  }
+}

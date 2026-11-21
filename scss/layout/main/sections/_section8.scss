@@ -1,0 +1,129 @@
+@use "../../../base/indexB" as *;
+
+.Section8{
+  max-width: 1920px;
+  width: 100%;
+  min-height: 708px;
+  @include flex($direction: column);
+  background-color: $section_bg_color_C;
+  gap: 40px;
+  padding: 96px 0;
+  @include small_tablet{
+    padding: 80px 40px;
+  }
+  @include phone_vertical{
+    padding: 48px 20px;
+  }
+}
+
+.Reviews_Header{
+  @include flex($direction: column);
+  gap: 8px;
+  .Reviews_Header_Main{
+    @include Inter("Inter-bold", 48px);
+    color: $main_text_color_A;
+    @include small_tablet{
+      @include Inter("Inter-bold", 36px);
+    }
+    @include phone__small_horizontal{
+      @include Inter("Inter-bold", 30px);
+    }
+    @include phone_vertical{
+      @include Inter("Inter-bold", 30px);
+    }
+  }
+  .Reviews_Header_Sub{
+    @include Inter("Inter-thin", 18px);
+    color: $main_text_color_A;
+    @include phone__small_horizontal{
+      @include Inter("Inter-thin", 16px);
+    }
+    @include phone_vertical{
+      @include Inter("Inter-thin", 16px);
+      text-align: center
+    }
+  }
+}
+
+.Reviews_Block{
+  @include flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  .Reviews_Item{
+    @include flex($direction: column);
+    gap: 20px;
+    .Review_Box{
+      @include flex($direction: column);
+      .Review_Text{
+        max-width: 384px;
+        border-radius: 10px;
+          box-shadow: 0 15px 30px 0  rgba($section_bg_color_A, 0.1);
+        text-align: center;
+      @include flex($direction: column);
+      background-color: $main_text_color_B;
+      gap: 8px;
+      padding: 40px 32px;
+      .Review_Text_Header{
+        @include Inter("Inter-bold", 24px);
+        color: $main_text_color_A;
+      }
+      .Review_Text_Sub{
+        @include Inter("Inter-thin", 14px);
+        color: $main_text_color_A;
+        line-height: 20px;
+      }
+      @include small_tablet{
+        max-width: 328px;
+      }
+      @include phone_horizontal{
+        max-width: 328px;
+      }
+      }
+      .Review_Vector{
+        position: relative;
+        top: -1px;
+      }
+    }
+    .Review_Avatar{
+      @include flex($direction: column);
+      gap: 8px;
+      .Review_Avatar_Name{
+        @include Inter("Inter-bold", 18px);
+        color: $main_text_color_A;
+      }
+      .Review_Avatar_Status{
+        @include Inter("Inter-thin", 14px);
+        color: $secondary_text_color;
+      }
+    }
+  }
+  @include small_tablet{
+    gap: 16px;
+  }
+  @include phone_horizontal{
+    gap: 16px;
+  }
+}
+
+.Review_Selection{
+  @include flex;
+  gap: 8px;
+}
+
+.Reviews_Block > .Reviews_Item:last-of-type{
+  @include tablet{
+    display: none;
+  }
+  @include phone_horizontal{
+    display: none;
+  }
+  @include phone_vertical{
+    display: none;
+  }
+}
+.Reviews_Block > .Reviews_Item:nth-of-type(2){
+  @include phone_vertical{
+    display: none;
+  }
+}
+

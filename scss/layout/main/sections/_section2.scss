@@ -1,0 +1,296 @@
+@use "../../../base/indexB" as *;
+
+.Section2{
+  max-width: 1920px;
+  width: 100%;
+  min-height: 611px;
+  @include flex($direction: column);
+  margin: 0 auto;
+  gap: 48px;
+  background-color: $main_text_color_B;
+  @include tablet{
+    min-height: 805px;
+  }
+  @include phone_horizontal{
+    min-height: 805px;
+    padding: 96px 20px;
+  }
+  @include phone_vertical{
+    min-height: 544px;
+    padding: 40px 20px;
+  }
+}
+
+.Client_Box{
+  @include flex($direction: column);
+  gap: 8px;
+  .Client_Header{
+    @include Inter("Inter-bold", 36px);
+    color: $main_text_color_A;
+    @include phone__small_horizontal{
+      @include Inter("Inter-bold", 30px);
+      text-align: center;
+    }
+    @include phone_vertical{
+      @include Inter("Inter-bold", 30px);
+      text-align: center;
+    }
+  }
+  .Client_Text{
+    @include Inter("Inter-thin", 18px);
+    font-weight: 600;
+    color: $main_text_color_A;
+    @include phone__small_horizontal{
+      @include Inter("Inter-thin", 16px);
+      text-align: center;
+    }
+  }
+  @include phone_vertical{
+    gap: 24px;
+  }
+}
+
+.Client_Partners{
+  max-width: 880px;
+  width: 100%;
+  min-height: 290px;
+  @include grid;
+  .Client_Item{
+    @include flex;
+    max-width: 176px;
+    width: 100%;
+    border: 0.05px solid rgb(213, 212, 212);
+    padding: 10px;
+    img{
+      @include phone_vertical{
+        width: 64.38px;
+        height: 20px;
+      }
+    }
+    @include phone_vertical{
+      max-width: 100px;
+      max-height: 60px;
+    }
+  }
+  @include tablet{
+    @include grid($column: repeat(3, 176px), $row: repeat(5, 1fr));
+    max-width: 688px;
+    min-height: 484px;
+    justify-content: center;
+  }
+  @include phone_horizontal{
+    @include grid($column: repeat(3, 176px), $row: repeat(5, 1fr));
+    max-width: 688px;
+    min-height: 484px;
+    justify-content: center;
+  }
+  @include phone__small_horizontal{
+    @include grid($column: repeat(3, 130px), $row: repeat(5, 1fr));
+    max-width: 688px;
+    min-height: 484px;
+    justify-content: center;
+  }
+  @include phone_vertical{
+    @include grid($column: repeat(3, 100px), $row: repeat(5, 60px));
+    max-width: 335px;
+    min-height: 304px;
+    justify-content: center;
+  }
+}
+
+.Client_Item:nth-child(2){
+  border-top: none;
+  @include tablet{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  @include phone_horizontal{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+.Client_Item:nth-child(3){
+  border-top: none;
+  @include tablet{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-right: none;
+  }
+  @include phone_horizontal{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-right: none;
+  }
+}
+.Client_Item:nth-child(4){
+  border-top: none;
+  @include tablet{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    border-top: 0.05px solid rgb(213, 212, 212);
+    border-left: none;
+  }
+  @include phone_horizontal{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    border-top: 0.05px solid rgb(213, 212, 212);
+    border-left: none;
+  }
+}
+
+.Client_Item:nth-child(12){
+  border-bottom: none;
+  @include tablet{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border-bottom: 0.05px solid rgb(213, 212, 212);
+  }
+  @include phone_horizontal{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border-bottom: 0.05px solid rgb(213, 212, 212);
+  }
+}
+.Client_Item:nth-child(13){
+  border-bottom: none;
+  @include tablet{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border-bottom: 0.05px solid rgb(213, 212, 212);
+    border-right: none;
+  }
+  @include phone_horizontal{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border-bottom: 0.05px solid rgb(213, 212, 212);
+    border-right: none;
+  }
+}
+.Client_Item:nth-child(14){
+  border-bottom: none;
+  @include tablet{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    border-left: none;
+  }
+  @include phone_horizontal{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    border-left: none;
+  }
+}
+
+.Client_Item:nth-child(6){
+  border-left: none;
+  @include tablet{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  @include phone_horizontal{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+.Client_Item:nth-child(10){
+  border-right: none;
+}
+
+.Client_Item:nth-child(1){
+  border-top: none;
+  border-left: none;
+  @include tablet{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  @include phone_horizontal{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+.Client_Item:nth-child(5){
+  border-top: none;
+  border-right: none;
+  @include tablet{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    border-top: 0.05px solid rgb(213, 212, 212);
+    border-right: 0.05px solid rgb(213, 212, 212);
+  }
+  @include phone_horizontal{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    border-top: 0.05px solid rgb(213, 212, 212);
+    border-right: 0.05px solid rgb(213, 212, 212);
+  }
+}
+
+.Client_Item:nth-child(11){
+  border-bottom: none;
+  border-left: none;
+  @include tablet{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border-bottom: 0.05px solid rgb(213, 212, 212);
+  }
+  @include phone_horizontal{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border-bottom: 0.05px solid rgb(213, 212, 212);
+  }
+}
+.Client_Item:nth-child(15){
+  border-bottom: none;
+  border-right: none;
+  @include tablet{
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+  @include phone_horizontal{
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+}
+
+
+@include tablet{
+  .Client_Item:nth-child(7){
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .Client_Item:nth-child(8){
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border-right: none;
+  }
+  .Client_Item:nth-child(9){
+    grid-column: 3/4;
+    grid-row: 4/5;
+    border-right: none;
+  }
+  .Client_Item:nth-child(10){
+    grid-column: 2/3;
+    grid-row: 5/6;
+    border-bottom: none;
+  }
+}
+@include phone_horizontal{
+  .Client_Item:nth-child(7){
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .Client_Item:nth-child(8){
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border-right: none;
+  }
+  .Client_Item:nth-child(9){
+    grid-column: 3/4;
+    grid-row: 4/5;
+    border-right: none;
+  }
+  .Client_Item:nth-child(10){
+    grid-column: 2/3;
+    grid-row: 5/6;
+    border-bottom: none;
+  }
+}

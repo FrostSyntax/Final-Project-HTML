@@ -1,0 +1,67 @@
+@use "../base/indexB" as *;
+
+
+.Find_Workspace{
+  @include Inter("Inter-medium", 16px);
+  color: $main_text_color_B;
+  padding: 18px 24px;
+  border-radius: 8px;
+  background-color: $section_bg_color_B;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    background-color: $main_ball_color;
+    scale: 1.01;
+  }
+}
+
+.Explore_All{
+  @include Inter("Inter-medium", 16px);
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: $main_text_color_B;
+  color: $section_bg_color_B;
+  padding: 18px 24px;
+  border-radius: 8px;
+  @include flex(center, start, row);
+  &:hover{
+    background-color: $secondary_text_color;
+    scale: 1.03;
+    .Hover_Arrow{
+      scale: 1;
+      position: relative;
+      right: -5px;
+    }
+  }
+}
+
+.Download{
+  @include Inter("Inter-medium", 16px);
+  color: $section_bg_color_B;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: $main_text_color_B;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    background-color: $secondary_text_color;
+    scale: 1.03;
+  }
+}
+
+.Form_Button{
+  max-width: 162px;
+  max-height: 56px;
+  @include Inter("Inter-medium", 16px);
+  color: $main_text_color_B;
+  padding: 18px 24px;
+  border-radius: 8px;
+  background-color: $section_bg_color_B;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    background-color: $main_ball_color;
+    scale: 1.01;
+  }
+}

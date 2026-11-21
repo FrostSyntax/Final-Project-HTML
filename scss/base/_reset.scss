@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: clip;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}

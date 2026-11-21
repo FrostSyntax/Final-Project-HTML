@@ -1,0 +1,153 @@
+@use "../base/indexB" as *;
+
+.Footer{
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  min-height: 424px;
+  @include flex;
+  background-color: $section_bg_color_A;
+  @include phone__small_horizontal{
+    min-height: 725px;
+  }
+  @include phone_vertical{
+    min-height: 1040px;
+  }
+}
+
+.Logo2{
+  z-index: 1;
+  img{
+    &:hover{
+    scale: 1.05;
+    }
+  }
+}
+
+.Footer_Content{
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  top: -10px;
+  @include flex(space-between, start);
+  width: 80%;
+  .Footer_Block{
+    @include flex(start);
+    gap: 30px;
+    flex-wrap: wrap;
+    .Footer_Item{
+      min-width: 176px;
+      @include flex($direction: column, $align: start);
+      gap: 32px;
+      .Footer_Item_Main{
+        @include Inter("Inter-bold", 24px);
+        color: $section_bg_color_C;
+      }
+      .Footer_List{
+        @include flex($direction: column, $align: start);
+        gap: 16px;
+        .Footer_List_Text{
+          @include Inter("Inter-thin", 18px);
+          color: $footer_secondary_color;
+          cursor: pointer;
+          &:hover{
+            color: $section_bg_color_B;
+          }
+        }
+      }
+      @include phone__small_horizontal{
+      gap: 18px;
+      }
+    }
+    @include phone__small_horizontal{
+      gap: 32px 0;
+    }
+  }
+  @include tablet{
+    @include flex($direction:column, $align: start);
+    gap: 48px;
+  }
+  @include phone_horizontal{
+    @include flex($direction:column, $align: start);
+    gap: 48px;
+  }
+  @include phone__small_horizontal{
+    @include flex($direction:column, $align: start);
+    gap: 16px;
+  }
+}
+
+.Footer_Decor1{
+  position: absolute;
+  min-width: 325px;
+  min-height: 130px;
+  background-color: $footer_element;
+  border-radius:  125px 0 125px 0;
+  top: 0;
+  left: -15px;
+}
+.Footer_Decor2{
+  position: absolute;
+  min-width: 130px;
+  min-height: 350px;
+  background-color: $footer_element;
+  border-radius:  125px 0 125px 0;
+  top: 125px;
+  left: 175px;
+}
+
+.Footer_Decor3{
+  position: absolute;
+  min-width: 325px;
+  min-height: 130px;
+  background-color: $footer_element;
+  border-radius:  125px 0 125px 0;
+  top: 350px;
+  left: -175px;
+}
+
+
+.Sub_Footer{
+  max-width: 1920px;
+  width: 100%;
+  height: 72px;
+  @include flex;
+  background-color: $section_bg_color_A;
+  .Sub_Footer_Content{
+    z-index: 1;
+    width: 80%;
+    @include flex(space-between);
+    .Sub_Footer_Text{
+      @include Inter("Inter-thin", 14px);
+      color: $footer_third_color;
+      @include phone__small_horizontal{
+        @include Inter("Inter-thin", 12px);
+      }
+    }
+    .Sub_Footer_List{
+      @include flex;
+      gap: 16px;
+      .Footer_Social_Media{
+        &:hover{
+          scale: 1.05;
+        }
+      }
+      @include phone__small_horizontal{
+        gap: 6px;
+      }
+    }
+    @include phone__small_horizontal{
+      @include flex(space-around);
+    }
+    @include phone_vertical{
+    @include flex($direction: column);
+    text-align: center;
+    gap: 32px;
+    }
+  }
+  @include phone_vertical{
+    height: 124px;
+  }
+}
+
+

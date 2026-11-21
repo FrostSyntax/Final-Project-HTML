@@ -1,0 +1,76 @@
+@use "../../../base/indexB" as *;
+
+.Section1{
+  max-width: 1920px;
+  width: 100%;
+  min-height: 786px;
+  @include flex;
+  padding: 0 112px;
+  @include tablet{
+    @include flex($direction: column);
+    min-height: 966px;
+  }
+  @include phone_horizontal{
+    @include flex($direction: column);
+    min-height: 1000px;
+    padding: 0 40px;
+  }
+  @include phone_horizontal{
+    @include flex($direction: column);
+    min-height: 852px;
+    padding: 0 20px;
+  }
+}
+
+
+.Section_Block{
+  @include flex($direction: column);
+  align-items: start;
+  width: 100%;
+  gap: 32px;
+  .Block_Header{
+    @include Inter("Inter-bold", 60px);
+    color: $main_text_color_A;
+    @include tablet{
+      @include Inter("Inter-bold", 60px);
+    }
+    @include phone_horizontal{
+      @include Inter("Inter-bold", 48px);
+    }
+    @include phone_horizontal{
+      @include Inter("Inter-bold", 36px);
+    }
+  }
+  .Block_Text{
+    @include Inter("Inter-thin", 18px);
+    font-weight: 600;
+    color: $main_text_color_A;
+    line-height: 28px;
+  }
+}
+
+.Section_Image{
+  position: relative;
+  right: -5%;
+  .Header_Image{
+    animation: moving_image 3s ease-in-out infinite;
+    @include phone_horizontal{
+    width: 100%;
+    }
+    @include phone_vertical{
+    width: 100%;
+    width: 280px;
+    height: 221px;
+    }
+  }
+  @include tablet{
+    top: 125px;
+  }
+  @include phone_horizontal{
+    top: 125px;
+  }
+  @include phone_vertical{
+    top: 150px;
+  }
+}
+

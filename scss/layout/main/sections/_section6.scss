@@ -1,0 +1,102 @@
+@use "../../../base/indexB" as *;
+
+.Section6{
+  max-width: 1920px;
+  width: 100%;
+  min-height: 1276px;
+  @include flex(center, start);
+  background-color: $main_text_color_B;
+  padding: 80px 40px;
+  @include phone_horizontal{
+    padding: 80px 20px;
+  }
+  @include phone_vertical{
+    padding: 48px 20px;
+  }
+}
+
+.Portfolio_Content{
+  max-width: 1250px;
+  position: relative;
+  @include flex($direction: column, $align: start);
+  gap: 48px;
+}
+
+.Portfolio_Header{
+  width: 100%;
+  @include Inter("Inter-bold", 48px);
+  text-align: center;
+  color: $main_text_color_A;
+  @include phone_horizontal{
+    @include Inter("Inter-bold", 36px);
+  }
+}
+
+.Portfolio_Block{
+  align-self: stretch;
+  max-width: 1250px;
+  width: 100%;
+  @include flex();
+  flex-wrap: wrap;
+  gap: 64px 32px;
+  .Portfolio_Item{
+    @include flex($align: start, $direction: column);
+    gap: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover{
+      scale: 1.05;
+      @include phone_vertical{
+        scale: 1.03;
+      }
+    }
+  }
+  @include phone_horizontal{
+    gap: 64px 24px;
+  }
+}
+
+.Portfolio_Text{
+  @include flex($direction: column, $align: start);
+  gap: 8px;
+}
+
+.Port_Item_Main{
+  @include Inter("Inter-bold", 30px);
+  color: $main_text_color_A;
+}
+
+.Port_Item_Sub{
+  @include Inter("Inter-regular", 16px);
+  color: $secondary_text_color;
+}
+
+.Portfolio_Item > img {
+  @include small_tablet {
+    width: 328px;
+    height: 384px;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 8px;
+  }
+  @include phone_horizontal {
+    width: 328px;
+    height: 384px;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 8px;
+  }
+  @include phone_vertical {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 8px;
+  }
+}
+
+
+

@@ -1,0 +1,72 @@
+@use "../../../base/indexB" as *;
+
+.Section4{
+  max-width: 1920px;
+  width: 100%;
+  min-height: 498px;
+  @include flex($direction: column);
+  background-color: $section_bg_color_B;
+  gap: 64px;
+  padding: 112px 96px;
+  @include tablet{
+    padding: 40px 80px;
+    min-height: 512px;
+  }
+  @include phone_horizontal{
+    padding: 40px 80px;
+    min-height: 512px;
+  }
+  @include phone_vertical{
+    padding: 48px 20px;
+    min-height: 478px;
+  }
+}
+
+.About_Top{
+  @include flex($direction: column);
+  gap: 40px;
+  .About_Header{
+  @include Inter("Inter-bold", 48px);
+  color: $main_text_color_B;
+  max-width: 800px;
+  text-align: center;
+  @include tablet{
+    @include Inter("Inter-bold", 36px);
+  }
+  @include phone_horizontal{
+    @include Inter("Inter-bold", 36px);
+  }
+  @include phone_vertical{
+    @include Inter("Inter-bold", 28px);
+  }
+  }
+}
+
+.About_Bottom{
+  max-width: 1216px;
+  @include flex;
+  gap: 156px;
+  .About_Item{
+    @include flex(start);
+    gap: 10px;
+    .About_Text{
+      color: $main_text_color_B;
+      @include Inter("Inter-regular", 16px);
+    }
+    @include tablet{
+      gap: 12px;
+    }
+    @include phone_horizontal{
+      gap: 12px;
+    }
+  }
+  @include tablet{
+    gap: 18px;
+    @include flex($align: start, $direction: column);
+  }
+  @include phone_horizontal{
+    gap: 18px;
+    @include flex($align: start, $direction: column);
+  }
+}
+

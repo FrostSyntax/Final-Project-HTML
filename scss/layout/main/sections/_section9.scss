@@ -1,0 +1,152 @@
+@use "../../../base/indexB" as *;
+
+
+.Section9{
+  overflow: hidden;
+  max-width: 1920px;
+  width: 100%;
+  min-height: 732px;
+  @include flex;
+  @include tablet{
+    padding: 0;
+    max-height: 800px;
+  }
+  @include small_tablet{
+    padding: 0;
+    max-height: 709px;
+  }
+  @include phone_horizontal{
+    padding: 0;
+    max-height: 709px;
+  }
+  @include phone_vertical{
+    padding: 0;
+    @include flex($direction: column);
+    min-height: 1009px;
+  }
+}
+
+.Field_Form{
+  width: 50%;
+  @include flex($direction: column);
+  padding: 0 50px;
+  gap: 48px;
+  .Form_Header{
+    @include flex($align: start, $direction: column);
+    width: 100%;
+    gap: 8px;
+    .Form_Main_Text{
+      @include Inter("Inter-bold", 48px);
+      color: $main_text_color_A;
+      @include tablet{
+        @include Inter("Inter-bold", 36px);
+      }
+      @include phone_horizontal{
+        @include Inter("Inter-bold", 36px);
+      }
+      @include phone_vertical{
+        @include Inter("Inter-bold", 36px);
+      }
+    }
+    .Form_Sub_Text{
+      @include Inter("Inter-thin", 16px);
+      color: $secondary_text_color;
+      @include phone_horizontal{
+        @include Inter("Inter-thin", 14px);
+      }
+    }
+  }
+  .Send_Form{
+    width: 100%;
+    @include flex($direction: column, $align: space-between);
+    gap: 24px;
+  }
+  @include phone_vertical{
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
+
+.Section9_image{
+  width: 50%;
+  align-self: stretch;
+  object-fit: cover;
+  @include tablet{
+    width: 50%;
+    object-fit: cover;
+    content: url(../../../../assets/images/FInd_Workspace_Tablet.svg);
+  }
+  @include phone_horizontal{
+    width: 50%;
+    object-fit: cover;
+    content: url(../../../../assets/images/FInd_Workspace_Tablet.svg);
+  }
+  @include phone__small_horizontal{
+    width: 50%;
+    object-fit: cover;
+    content: url(../../../../assets/images/FInd_Workspace_Tablet.svg);
+  }
+  @include phone_vertical{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+  }
+}
+
+.Input_Header{
+  @include Inter("Inter-regular", 14px);
+  color: $secondary_text_color;
+}
+
+.Full_name{
+  @include flex;
+  gap: 32px;
+  .Form_First_Name{
+    width: 100%;
+    @include flex($align: start, $direction: column);
+    gap: 4px;
+  }
+  .Form_Last_Name{
+    width: 100%;
+    @include flex($align: start, $direction: column);
+    gap: 4px;
+  }
+  @include tablet {
+    @include flex($direction: column);
+  }
+  @include phone_horizontal {
+    @include flex($direction: column);
+  }
+}
+
+input{
+  @include Inter("Inter-thin", 14px);
+  border: 1px solid $footer_third_color;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 48px;
+  text-align: center;
+}
+
+.Form_Email{
+  width: 100%;
+  @include flex($align: start, $direction: column);
+  gap: 4px;
+}
+
+.Send_Message{
+  width: 100%;
+  @include flex($align: start, $direction: column);
+  gap: 4px;
+  textarea{
+    @include Inter("Inter-thin", 14px);
+    width: 100%;
+    resize: none;
+    min-height: 136px;
+    border: 1px solid $footer_third_color;
+    border-radius: 6px;
+    padding-top: 1%;
+    padding-left: 1%;
+  }
+}
+

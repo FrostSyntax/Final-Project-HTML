@@ -1,0 +1,55 @@
+@mixin Inter($Inter, $size){
+  font-family: $Inter, sans-serif;
+  font-size: $size;
+}
+
+@mixin flex($justify: center, $align: center, $direction: row){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin grid($column: repeat(5, 1fr), $row: repeat(3, 1fr)){
+  display: grid;
+  grid-template-columns: $column;
+  grid-template-rows: $row;
+}
+
+@mixin laptop{
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media (max-width: 1024px) and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin small_tablet{
+  @media (max-width: 900px) and (min-width: 768px) {
+    @content;
+  }
+}
+
+
+@mixin phone_horizontal{
+  @media (max-width: 768px) and (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin phone__small_horizontal{
+  @media (max-width: 710px) and (min-width: 400px) {
+    @content;
+  }
+}
+
+@mixin phone_vertical{
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
