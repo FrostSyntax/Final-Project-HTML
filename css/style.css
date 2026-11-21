@@ -16,7 +16,7 @@
 }
 @font-face {
   font-family: "Inter-thin";
-  src: url(../assets/fonts/static/Inter_18pt-Thin.ttf) format("truetype");
+  src: url(../assets/fonts/static/Inter_18pt-Light.ttf) format("truetype");
 }
 * {
   margin: 0;
@@ -1421,7 +1421,7 @@ iframe {
   }
 }
 .Section_Block .Block_Text {
-  font-family: "Inter-regular", sans-serif;
+  font-family: "Inter-thin", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #111827;
@@ -1539,14 +1539,14 @@ iframe {
   }
 }
 .Client_Box .Client_Text {
-  font-family: "Inter-regular", sans-serif;
+  font-family: "Inter-thin", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #111827;
 }
 @media (max-width: 710px) and (min-width: 400px) {
   .Client_Box .Client_Text {
-    font-family: "Inter-regular", sans-serif;
+    font-family: "Inter-thin", sans-serif;
     font-size: 16px;
     text-align: center;
   }
@@ -2020,7 +2020,7 @@ iframe {
   }
 }
 .Service_Block .Service_Item .Card_Content .Card_Text {
-  font-family: "Inter-regular", sans-serif;
+  font-family: "Inter-thin", sans-serif;
   font-size: 16px;
   color: #374151;
   line-height: 24px;
@@ -2188,7 +2188,7 @@ iframe {
 }
 .About_Bottom .About_Item .About_Text {
   color: #FFFFFF;
-  font-family: "Inter-medium", sans-serif;
+  font-family: "Inter-regular", sans-serif;
   font-size: 16px;
 }
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -2390,18 +2390,18 @@ iframe {
 }
 .Info_Middle .Info_Card .Info_Text .Info_SubText {
   color: #111827;
-  font-family: "Inter-regular", sans-serif;
+  font-family: "Inter-thin", sans-serif;
   font-size: 18px;
 }
 @media (max-width: 768px) and (min-width: 320px) {
   .Info_Middle .Info_Card .Info_Text .Info_SubText {
-    font-family: "Inter-regular", sans-serif;
+    font-family: "Inter-thin", sans-serif;
     font-size: 16px;
   }
 }
 @media (max-width: 450px) {
   .Info_Middle .Info_Card .Info_Text .Info_SubText {
-    font-family: "Inter-regular", sans-serif;
+    font-family: "Inter-thin", sans-serif;
     font-size: 16px;
   }
 }
@@ -2669,7 +2669,7 @@ iframe {
 }
 
 .Port_Item_Sub {
-  font-family: "Inter-medium", sans-serif;
+  font-family: "Inter-regular", sans-serif;
   font-size: 16px;
   color: #374151;
 }
@@ -2861,7 +2861,7 @@ iframe {
   color: #111827;
 }
 .Community_Text .Community_Card_Sub {
-  font-family: "Inter-regular", sans-serif;
+  font-family: "Inter-thin", sans-serif;
   font-size: 16px;
   color: #4B5563;
 }
@@ -3034,7 +3034,7 @@ iframe {
   color: #111827;
 }
 .Reviews_Block .Reviews_Item .Review_Box .Review_Text .Review_Text_Sub {
-  font-family: "Inter-regular", sans-serif;
+  font-family: "Inter-thin", sans-serif;
   font-size: 14px;
   color: #111827;
   line-height: 20px;
@@ -3075,7 +3075,7 @@ iframe {
   color: #111827;
 }
 .Reviews_Block .Reviews_Item .Review_Avatar .Review_Avatar_Status {
-  font-family: "Inter-regular", sans-serif;
+  font-family: "Inter-thin", sans-serif;
   font-size: 14px;
   color: #374151;
 }
@@ -3245,13 +3245,13 @@ iframe {
   }
 }
 .Field_Form .Form_Header .Form_Sub_Text {
-  font-family: "Inter-thin", sans-serif;
+  font-family: "Inter-regular", sans-serif;
   font-size: 16px;
   color: #374151;
 }
 @media (max-width: 768px) and (min-width: 320px) {
   .Field_Form .Form_Header .Form_Sub_Text {
-    font-family: "Inter-thin", sans-serif;
+    font-family: "Inter-regular", sans-serif;
     font-size: 14px;
   }
 }

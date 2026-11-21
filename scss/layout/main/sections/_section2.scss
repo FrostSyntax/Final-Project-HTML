@@ -37,11 +37,11 @@
     }
   }
   .Client_Text{
-    @include Inter("Inter-regular", 18px);
+    @include Inter("Inter-thin", 18px);
     font-weight: 600;
     color: $main_text_color_A;
     @include phone__small_horizontal{
-      @include Inter("Inter-regular", 16px);
+      @include Inter("Inter-thin", 16px);
       text-align: center;
     }
   }

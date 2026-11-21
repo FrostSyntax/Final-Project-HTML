@@ -68,7 +68,7 @@
         color: $main_text_color_A;
       }
       .Review_Text_Sub{
-        @include Inter("Inter-regular", 14px);
+        @include Inter("Inter-thin", 14px);
         color: $main_text_color_A;
         line-height: 20px;
       }
@@ -92,7 +92,7 @@
         color: $main_text_color_A;
       }
       .Review_Avatar_Status{
-        @include Inter("Inter-regular", 14px);
+        @include Inter("Inter-thin", 14px);
         color: $secondary_text_color;
       }
     }

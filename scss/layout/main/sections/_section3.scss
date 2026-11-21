@@ -57,7 +57,7 @@
         }
       }
       .Card_Text{
-        @include Inter("Inter-regular", 16px);
+        @include Inter("Inter-thin", 16px);
         color: $secondary_text_color;
         line-height: 24px;
       }

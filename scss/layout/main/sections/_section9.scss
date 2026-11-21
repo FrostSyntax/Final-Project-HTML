@@ -49,10 +49,10 @@
       }
     }
     .Form_Sub_Text{
-      @include Inter("Inter-thin", 16px);
+      @include Inter("Inter-regular", 16px);
       color: $secondary_text_color;
       @include phone_horizontal{
-        @include Inter("Inter-thin", 14px);
+        @include Inter("Inter-regular", 14px);
       }
     }
   }
