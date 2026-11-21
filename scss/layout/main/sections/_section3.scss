@@ -38,13 +38,13 @@
     gap: 40px;
     border-radius: 8px;
     background-color: $main_text_color_B;
-    max-width: 384px;
+    width: 384px;
     max-height: 336px;
     .Card_Content{
       @include flex(center, start, column);
       gap: 12px;
       .Card_Header{
-        @include Inter("Inter-bold", 36px);
+        @include Inter("Inter-bold", 30px);
         color: $main_text_color_A;
         @include small_tablet{
           @include Inter("Inter-bold", 24px);
@@ -78,15 +78,15 @@
     }
     @include small_tablet{
       width: 328px;
-      height: 328px;
+      min-height: 328px;
     }
     @include phone_horizontal{
       width: 328px;
-      height: 328px;
+      min-height: 328px;
     }
     @include phone_vertical{
       width: 300px;
-      height: 320px;
+      min-height: 320px;
     }
   }
 }

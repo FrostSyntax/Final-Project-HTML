@@ -1977,7 +1977,7 @@ iframe {
   gap: 40px;
   border-radius: 8px;
   background-color: #FFFFFF;
-  max-width: 384px;
+  width: 384px;
   max-height: 336px;
 }
 .Service_Block .Service_Item .Card_Content {
@@ -1998,7 +1998,7 @@ iframe {
 }
 .Service_Block .Service_Item .Card_Content .Card_Header {
   font-family: "Inter-bold", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   color: #111827;
 }
 @media (max-width: 900px) and (min-width: 768px) {
@@ -2055,19 +2055,19 @@ iframe {
 @media (max-width: 900px) and (min-width: 768px) {
   .Service_Block .Service_Item {
     width: 328px;
-    height: 328px;
+    min-height: 328px;
   }
 }
 @media (max-width: 768px) and (min-width: 320px) {
   .Service_Block .Service_Item {
     width: 328px;
-    height: 328px;
+    min-height: 328px;
   }
 }
 @media (max-width: 450px) {
   .Service_Block .Service_Item {
     width: 300px;
-    height: 320px;
+    min-height: 320px;
   }
 }
 
