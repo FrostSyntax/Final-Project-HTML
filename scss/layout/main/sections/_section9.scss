@@ -74,17 +74,17 @@
   @include tablet{
     width: 50%;
     object-fit: cover;
-    content: url(../../../../assets/images/FInd_Workspace_Tablet.svg);
+    content: url(../../../../assets/images/Find_WorkspaceTablet.svg);
   }
   @include phone_horizontal{
     width: 50%;
     object-fit: cover;
-    content: url(../../../../assets/images/FInd_Workspace_Tablet.svg);
+    content: url(../../../../assets/images/Find_WorkspaceTablet.svg);
   }
   @include phone__small_horizontal{
     width: 50%;
     object-fit: cover;
-    content: url(../../../../assets/images/FInd_Workspace_Tablet.svg);
+    content: url(../../../../assets/images/Find_WorkspaceTablet.svg);
   }
   @include phone_vertical{
     width: 100%;
